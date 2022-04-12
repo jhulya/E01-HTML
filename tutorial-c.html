@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <title>Vetores e Matrizes</title>
+    </head>
+    <body>
+
+       <div>
+           <h2>Vetores/ Matrizes</h2>
+       </div>
+       
+       <div>
+           <ul>
+            <li>Recurso das linguagens que facilita a 
+            declaração/acesso/manipulação de uma sequência de 
+            variáveis de um mesmo tipo;</li>
+            <li>Um vetor é uma matriz com apenas 1 dimensão;</li>
+            <li> Em alguns livros esta estrutura é chamada de homogênea,
+            pois armazena elementos de um mesmo tipo.</li>
+           </ul>
+           <div>
+               <h3>Declaração:</h3>
+                <p>
+                    <strong>tipo nome [ tamanho ];</strong>
+                </p>
+           </div>
+            <div>
+                <h2>Exemplos</h2>
+                <ul>
+                    <li><strong>int idades[30];</strong></li>
+                    <br>
+                    <li><strong>double alturas[30];</strong></li>
+                </ul>
+                   
+            </div>
+        </div>
+        <hr>
+        <br>
+        <div>
+            <h2>Acessando elementos</h2>
+        </div>
+    
+        <div>
+            <ul>
+                <li>Os elementos são acessados com o operador [], onde o 
+                    primeiro elemento está na posição 0, o segundo na 
+                    posição 1, assim sucessivamente até a posição 
+                    tamanho-1
+                </li>
+                <li>A linguagem C não verifica se você está utilizando 
+                    índice inválido! Você pode acabar lendo lixo ou 
+                    alterando outras variáveis!
+                </li>
+            </ul>
+            <div>
+                <h2>Exemplo</h2>
+                <ul>
+                    <li><strong>altura[2] = 1.5;<br>
+                        if (idade[20] &rsaquo; 18) ...<br>
+                        for (i=0; i&lsaquo;30; i++) printf(“%f\n”, altura[i]);</strong>
+                    </li>
+                    <br>
+                    <li>
+                        Leia 10 números inteiros positivos e armazene em um vetor. Em 
+                        seguida determine e imprima o maior elemento no vetor.
+                        <br>
+                        <img src="ex1.png" width="600px">
+                    </li>
+                </ul>
+                
+            </div>
+        </div>
+        <hr>
+        <br>
+        <div>
+            <h2>Inicialização na declaração</h2>
+        </div>
+    
+        <div>
+            <p><strong>int vetor[10] = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9};</strong></p>
+            <ul>
+                <li>
+                    Esta inicialização pode ser feita apenas na declaração
+                </li>
+                <li>
+                    A linguagem C não verifica se você está utilizando 
+                    índice inválido! Você pode acabar lendo lixo ou 
+                    alterando outras variáveis!
+                </li>
+                <li>
+                    Se o num de elementos é menor que o tamanho do 
+                    vetor, os elementos restante são inicializados com zero;
+                </li>
+                <li>
+                    Podemos omitir o tamanho do vetor quando ele é
+                    inicializado:
+                </li>
+                <p><strong>int vetor[] = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9};</strong></p>
+                <li>
+                    Sem inicialização o tamanho é obrigatório.
+                    <br>
+                    <img src="ex2.png" width="400px">
+                </li>    
+            </ul>
+        </div>
+        <hr>
+        <br>
+        <div>
+            <h2>Vetores multidimensionais</h2>
+        </div>
+    
+        <div>
+            <ul>
+                <h3>Declaração:</h3>
+                <p><strong>tipo nome [tam1][tam2]...[tamN];</strong></p>
+                
+                <h3>Inicialização:</h3>
+                <p><strong>float matriz [3][4] = {1,2,3,4,5,6,7,8,9,10,11,12};
+                    <br>
+                    float matriz [ ][4] = {1,2,3,4,5,6,7,8,9,10,11,12};</strong></p>
+                <li>
+                    Apenas a primeira dimensão pode ser omitida.
+                    <br>
+                    <img src="ex3.png" width="500px">
+                </li>
+            </ul>
+        </div>
+
+        <div>
+            <h2>Exemplo</h2>
+            <ul>
+                <li>
+                    Leia os elementos de uma matriz 3x4 de números float. 
+                    Em seguida imprima os elementos no formato abaixo:
+                    <br>
+                    <img src="ex4.png" width="400px">
+                    <br><br>
+                    <img src="ex5.png" width="650px">
+                </li>
+            </ul>
+            
+        </div>
+
+    </body>
+</html>
